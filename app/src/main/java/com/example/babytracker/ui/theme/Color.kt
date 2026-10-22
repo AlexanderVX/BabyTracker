@@ -2,10 +2,15 @@ package com.example.babytracker.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+val MintLight = Color(0xFFA8E6CF) //мятный: основной акцент
+val PeachLight = Color(0xFFFFD3B6)     // персиковый: фон карточек
+val LavenderLight = Color(0xFFD5AAFF)  // лавандовый: акценты
+val BgLight = Color(0xFFFAFAFA)        // фон светлой темы
+val TextDark = Color(0xFF2D3142)       // основной текст
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+// тёмная палитра — те же цвета, приглушённые под тёмный фон
+val MintDark = Color(0xFF5FA487)       // мятный, но темнее — не слепит глаза
+val PeachDark = Color(0xFFA6754F)      // персиковый, приглушённый
+val LavenderDark = Color(0xFF8F63C4)   // лавандовый, приглушённый
+val BgDark = Color(0xFF1E1E22)         // почти чёрный фон тёмной темы
+val TextLight = Color(0xFFECECEC)      // светло-серый текст
