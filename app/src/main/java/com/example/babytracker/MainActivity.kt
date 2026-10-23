@@ -23,6 +23,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.babytracker.ui.screens.HelloScreen
 import com.example.babytracker.ui.theme.BabyTrackerTheme
 
 // главный экран приложения — точка входа
@@ -37,27 +38,4 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// composable-функция — «чертёж» части экрана
-@Composable
-fun HelloScreen() {
-    // remember: хранит значение между перерисовками экрана
-    var count by rememberSaveable() { mutableIntStateOf(0) }
-
-    // Column = вертикальный контейнер (как LinearLayout в старом Android)
-    Column(
-        // Modifier — «настройщик» элемента: размер, отступы, выравнивание
-        modifier = Modifier
-            .fillMaxSize()                  // занять весь экран
-            .padding(24.dp),                // отступ 24dp со всех сторон
-        horizontalAlignment = Alignment.CenterHorizontally, // по центру горизонтали
-        verticalArrangement = Arrangement.Center            // по центру вертикали
-    ) {
-        Text("Привет, МалышТрекер!")        // просто текст
-        Text("Нажали кнопок: $count")       // $count подставит значение переменной
-        Spacer(Modifier.height(16.dp))      // пустое место 16dp
-        Button(onClick = { count++ }) {     // при нажатии увеличиваем счётчик
-            Text("Нажми меня")
-        }
-    }
-}
 
