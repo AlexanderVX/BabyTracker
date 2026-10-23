@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {                        // говорим: интерфейс рисуем через Compose
-            BabyTrackerTheme {              // наша тема из части 1
+            BabyTrackerTheme {              // наша тема
                 HelloScreen()               // показываем главный экран
             }
         }
